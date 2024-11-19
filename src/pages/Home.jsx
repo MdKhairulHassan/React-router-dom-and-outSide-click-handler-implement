@@ -45,18 +45,6 @@ const Home = () => {
     
     <>
       
-      {/* Category Part Start */}
-      <Category
-      paraOne={'Shop by Category'}
-      paraTwo={'Category 1'}
-      paraThree={'Category 2'}
-      paraFour={'Category 3'}
-      paraFive={'Category 4'}
-      paraSix={'Category 5'}
-      />
-      {/* Category Part End */}
-
-      
       {/* Banner Part Start */}
       <Banner
         href={'#'}
