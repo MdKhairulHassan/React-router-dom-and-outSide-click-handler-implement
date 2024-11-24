@@ -20,13 +20,13 @@ const Category = ({ paraOne, paraTwo, paraThree, paraFour, paraFive, paraSix }) 
      <Flex>
        <Flex className={'w-[20%] gap-2 items-center'}>
               <OutsideClickHandler onOutsideClick={() => { setHidden(false); }}>
-                <Flex className={'items-center'}>
+                <Flex className={'items-center relative'}>
                   <HiMenuAlt2 className='cursor-pointer' onClick={() => setHidden(!hidden)} />
                   <div onClick={() => setHidden(!hidden)}>
-                  <Heading as={'h4'} className={'font-dms text-[14px] pl-2 text-TextHColor cursor-pointer relative'} text={paraOne} />
+                  <Heading as={'h4'} className={'font-dms text-[14px] pl-2 text-TextHColor cursor-pointer'} text={paraOne} />
                   </div>
                   {hidden && (
-                  <div className='bg-white p-4 w-[230px] absolute left-[30px] top-[150px] rounded-md' >
+                  <div className='bg-white p-4 w-[230px] absolute top-[30px] rounded-md' >
                   <ul className='font-dms text-[16px] text-TextColor'>
                     <li className='border-b py-5 bottom-BorderInfoColor' ><Text text={paraTwo}/></li>
                     <li className='border-b py-5 bottom-BorderInfoColor' ><Text text={paraThree}/></li>

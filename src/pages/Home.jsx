@@ -16,7 +16,6 @@ import productSimgthree from '../assets/productSimgthree.png'
 import productSimgfour from '../assets/productSimgfour.png'
 import PrevArrow from '../components/PrevArrow'
 import NextArrow from '../components/NextArrow'
-import Category from '../parts/Category';
 import Banner from '../parts/Banner';
 import Information from '../parts/Information';
 import Adspart from '../parts/Adspart';
