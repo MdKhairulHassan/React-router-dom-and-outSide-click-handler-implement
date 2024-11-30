@@ -31,8 +31,8 @@ const Header = ({ imgSrc, imgAlt, menuone, menutwo, menuthree, menufour }) => {
             <NavLink to={'/about'}>
             <Menu menuName={menuthree}/>
             </NavLink>
-            <NavLink to={'/contact'}>    
-            <Menu menuName={menufour} onClick={()=>navigate('/contact', {replace:true})}/>
+            <NavLink to={'/contact'} onClick={() => navigate('/', {replace:true})}>    
+            <Menu menuName={menufour}/>
             </NavLink>
           </Flex>
           </Flex>
