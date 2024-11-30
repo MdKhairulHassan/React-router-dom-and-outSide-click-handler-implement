@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-a.active ul li{
+a.active{
   color: rgb(119, 39, 39);
   font-weight: 800;
   font-size: 15px;

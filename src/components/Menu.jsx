@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Menu = ({className, menuName}) => {
+const Menu = ({className, children}) => {
   return (
-    <ul>
-      <li className={`text-[14px] text-TextColor font-dms hover:font-bold hover:text-TextHColor px-5 ${className}`}>{menuName}</li>
-    </ul>
+    <ul className={`text-[14px] text-TextColor font-dms ${className}`}>{children}</ul>
   )
 }
 

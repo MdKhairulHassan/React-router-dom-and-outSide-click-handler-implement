@@ -21,20 +21,21 @@ const Header = ({ imgSrc, imgAlt, menuone, menutwo, menuthree, menufour }) => {
             <Image imgSrc={imgSrc} imgAlt={imgAlt}/>
             </NavLink>
           </div>
-            <Flex className='w-[70%] pl-8'>
-            <NavLink to={'/'}>
-            <Menu menuName={menuone}/>
-            </NavLink>
-            <NavLink to={'/shop'}>
-            <Menu menuName={menutwo}/>
-            </NavLink>
-            <NavLink to={'/about'}>
-            <Menu menuName={menuthree}/>
-            </NavLink>
-            <NavLink to={'/contact'} onClick={() => navigate('/', {replace:true})}>    
-            <Menu menuName={menufour}/>
-            </NavLink>
-          </Flex>
+            <Menu className='flex w-[70%] pl-8'>
+              <li>
+              <NavLink to={'/'} className={'hover:font-bold hover:text-TextHColor px-5'}>{menuone}</NavLink>
+              </li>
+              <li>
+              <NavLink to={'/shop'} className={'hover:font-bold hover:text-TextHColor px-5'}>{menutwo}</NavLink>
+              </li>
+              <li>
+              <NavLink to={'/about'} className={'hover:font-bold hover:text-TextHColor px-5'}>{menuthree}</NavLink>
+              </li>
+              <li>
+                <NavLink to={'/contact'} className={'hover:font-bold hover:text-TextHColor px-5'}
+                  onClick={() => navigate('/', { replace: true })}>{menufour}</NavLink>
+              </li>
+            </Menu>
           </Flex>
         </Container>
       </div>
